@@ -1,0 +1,112 @@
+{
+  "theme": "light",
+  "archetype": "Organic & Earthy (Archetype 1) mixed with Soft Editorial",
+  "design_philosophy": "Creative, clean, editorial, Gen Z, professional, trustworthy. Minimal design with warm personality and elegant spacing. Strong editorial typography paired with soft organic shapes.",
+  "colors": {
+    "background": "#F9F8F6",
+    "surface": "#FFFFFF",
+    "surface_secondary": "#F4F1ED",
+    "primary": "#D47A6B",
+    "text_primary": "#1E1E1E",
+    "text_secondary": "#6B6A68",
+    "border": "#E8E5E1"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond",
+      "body": "Outfit"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl tracking-tighter leading-[1.1] font-medium text-text_primary",
+      "h2": "text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight text-text_primary",
+      "h3": "text-xl md:text-2xl font-normal text-text_primary",
+      "body": "text-base md:text-lg leading-relaxed font-light text-text_secondary",
+      "overline": "text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-primary"
+    },
+    "rules": "Headings must never use Inter or standard Sans. High contrast between massive elegant serif headings and soft, readable geometric sans body text."
+  },
+  "layout": {
+    "spacing": "Generous. Use p-8, p-12, p-16, py-24. Value negative space.",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "grid_modes": {
+      "tetris": "Use Mode A 'Tetris' grid for the 'What I do' section. Mix squares (col-span-4) and rectangles (col-span-8) with wide gaps (gap-8 or gap-12).",
+      "portfolio": "Staggered 2-column grid or single-column oversized editorial image blocks to showcase case studies."
+    },
+    "border_radius": "Use rounded-2xl or rounded-3xl on cards and images to feel approachable and 'Gen Z'."
+  },
+  "surfaces": {
+    "cards": "Flat background (surface or surface_secondary), 1px subtle border (border-border), no hard shadow. Hover state: slight lift (-translate-y-1) with ambient soft shadow (shadow-xl shadow-black/5).",
+    "header": "Crystal Glass: backdrop-blur-2xl bg-[#F9F8F6]/70, 1px bottom delicate border (border-border/50)."
+  },
+  "motion": {
+    "scroll": "Smooth scrolling aesthetic. Sections should fade in gently.",
+    "interactions": "Staggered text reveals on headings. Image parallax inside cards. Hover effects should be slow and elegant (duration-300 to duration-500)."
+  },
+  "components": {
+    "buttons": "Pill-shaped (rounded-full) with px-8 py-4. Primary CTA uses bg-primary text-white hover:opacity-90. Secondary CTA uses border border-text_primary text-text_primary hover:bg-text_primary hover:text-white.",
+    "icons": "Use lucide-react with thin stroke-width (1.5 or 1) to match the editorial elegance.",
+    "testing": "All interactive elements MUST include data-testid (e.g., data-testid='hero-contact-btn')."
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Social Media Manager, Content Creator & Storytelling lover",
+        "layout": "Asymmetrical. Huge serif typography on one side, warm portrait on the other. Include 'Guarda i miei progetti' and 'Contattami' CTAs."
+      },
+      "about": {
+        "title": "What I do",
+        "style": "Bento grid with skill cards: Social Media Strategy, Content Creation, Community Management, Creator Relations, Digital Campaigns."
+      },
+      "experience": {
+        "title": "Esperienza",
+        "style": "Elegant vertical timeline or massive list with hover image reveals. Items: Visit Italy, Ginecologia Fiorillo & Palese, Teatro Nazionale di Napoli, social.archie."
+      },
+      "portfolio": {
+        "title": "Progetti in evidenza",
+        "style": "Large case study cards. Hover state should show 'View project' overlay (bg-black/30 backdrop-blur-sm)."
+      },
+      "services": {
+        "title": "Come posso aiutarti",
+        "style": "Clean layout presenting service offerings. Warm, smart, direct copy."
+      },
+      "contact": {
+        "title": "Let's work together",
+        "style": "Massive footer CTA. Simple buttons linking to email, Instagram, LinkedIn."
+      }
+    },
+    "case_study": {
+      "layout": "Editorial reading experience. Massive hero image, followed by grid sections for Overview, Goal, Role, Process, Content Examples, Results, Learnings."
+    }
+  },
+  "media": {
+    "hero_portrait": {
+      "url": "https://images.unsplash.com/photo-1596095713029-5f68b397f1c3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwyfHxjcmVhdGl2ZSUyMHdvbWFuJTIwcG9ydHJhaXQlMjB3YXJtfGVufDB8fHx8MTc4MjIxMDk3Mnww&ixlib=rb-4.1.0&q=85",
+      "description": "Warm editorial portrait of a creative woman, representing Martina in the Hero or About section."
+    },
+    "project_visit_italy": {
+      "url": "https://images.pexels.com/photos/19082587/pexels-photo-19082587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Aerial view of Naples, Italy. Placeholder for 'Visit Italy' case study."
+    },
+    "project_teatro": {
+      "url": "https://images.pexels.com/photos/13331292/pexels-photo-13331292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Ornate interior of a vintage theater. Placeholder for 'Teatro Nazionale di Napoli' case study."
+    },
+    "project_ginecologia": {
+      "url": "https://images.unsplash.com/photo-1683721003111-070bcc053d8b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGNvbnRlbnQlMjBhZXN0aGV0aWN8ZW58MHx8fHwxNzgyMjEwOTcyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Clean, soft aesthetic branding photo. Placeholder for 'Ginecologia Fiorillo & Palese'."
+    },
+    "project_social_archie": {
+      "url": "https://images.unsplash.com/photo-1724862936518-ae7fcfc052c1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwyfHxzb2NpYWwlMjBtZWRpYSUyMGNvbnRlbnQlMjBhZXN0aGV0aWN8ZW58MHx8fHwxNzgyMjEwOTcyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Person holding a smartphone with social media. Placeholder for 'social.archie' project."
+    },
+    "aesthetic_filler": {
+      "url": "https://images.pexels.com/photos/5710631/pexels-photo-5710631.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Warm sunlight illuminating an Italian facade. Use for services or about section background textures."
+    }
+  },
+  "contact_info": {
+    "email": "martinaarc@outlook.it",
+    "instagram": "@social.archie",
+    "linkedin": "https://www.linkedin.com/in/martina-arciello-54245723a/"
+  }
+}
