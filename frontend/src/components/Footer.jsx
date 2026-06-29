@@ -1,5 +1,5 @@
 import { Mail, Instagram, Linkedin } from "lucide-react";
-import { PROFILE } from "../data/content";
+import { PROFILE } from "../data/content.js";
 
 export const Footer = () => {
   return (
