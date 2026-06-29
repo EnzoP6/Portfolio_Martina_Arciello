@@ -5,26 +5,36 @@ import { useReveal } from "../hooks/useReveal";
 
 export const Portfolio = () => {
   return (
-    <section id="progetti" data-testid="portfolio-section" className="py-20 md:py-28 bg-bg-[#F9F8F6]">
+    <section
+      id="progetti"
+      data-testid="portfolio-section"
+      className="py-20 md:py-28 bg-[#F9F8F6]"
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div className="max-w-2xl">
             <span className="text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-[#0097B2]">
               Portfolio
             </span>
+
             <h2 className="mt-5 font-serif text-4xl md:text-5xl tracking-tight text-ink">
               Progetti in evidenza
             </h2>
           </div>
+
           <p className="text-base font-light text-stone max-w-sm">
-            Una selezione di realtà a cui ho dato voce, tra travel, cultura, healthcare e
-            personal branding.
+            Una selezione di realtà a cui ho dato voce, tra travel, cultura,
+            healthcare e personal branding.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {PROJECTS.map((project, i) => (
-            <ProjectCard key={project.slug} project={project} featured={i === 0} />
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              featured={i === 0}
+            />
           ))}
         </div>
       </div>
@@ -34,6 +44,7 @@ export const Portfolio = () => {
 
 const ProjectCard = ({ project, featured }) => {
   const ref = useReveal();
+
   return (
     <Link
       ref={ref}
@@ -43,7 +54,11 @@ const ProjectCard = ({ project, featured }) => {
         featured ? "md:col-span-2" : ""
       }`}
     >
-      <div className={`overflow-hidden ${featured ? "h-72 md:h-[420px]" : "h-64 md:h-72"}`}>
+      <div
+        className={`overflow-hidden ${
+          featured ? "h-72 md:h-[420px]" : "h-64 md:h-72"
+        }`}
+      >
         <img
           src={project.image}
           alt={project.title}
@@ -51,20 +66,27 @@ const ProjectCard = ({ project, featured }) => {
           loading="lazy"
         />
       </div>
+
       <div className="p-7 md:p-8">
-        <span className="text-xs uppercase tracking-[0.15em] text-clay">
+        <span className="text-xs uppercase tracking-[0.15em] text-[#0097B2]">
           {project.category}
         </span>
+
         <div className="mt-3 flex items-start justify-between gap-4">
-          <h3 className="font-serif text-2xl md:text-3xl text-ink">{project.title}</h3>
-          <span className="shrink-0 mt-1 inline-flex items-center justify-center w-10 h-10 rounded-full border border-line text-ink group-hover:bg-clay group-hover:text-white group-hover:border-clay transition-all duration-300">
+          <h3 className="font-serif text-2xl md:text-3xl text-ink transition-colors duration-300 group-hover:text-[#0097B2]">
+            {project.title}
+          </h3>
+
+          <span className="shrink-0 mt-1 inline-flex items-center justify-center w-10 h-10 rounded-full border border-line text-ink group-hover:bg-[#0097B2] group-hover:text-white group-hover:border-[#0097B2] transition-all duration-300">
             <ArrowUpRight size={18} strokeWidth={1.5} />
           </span>
         </div>
+
         <p className="mt-3 text-base font-light text-stone leading-relaxed max-w-2xl">
           {project.description}
         </p>
-        <span className="mt-5 inline-block text-sm font-medium text-ink border-b border-clay pb-0.5">
+
+        <span className="mt-5 inline-block text-sm font-medium text-ink border-b border-[#0097B2] pb-0.5 transition-colors duration-300 group-hover:text-[#0097B2]">
           View project
         </span>
       </div>
