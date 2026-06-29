@@ -1,4 +1,4 @@
-import { EXPERIENCES } from "../data/content";
+import { EXPERIENCES } from "../data/content.js";
 import { useReveal } from "../hooks/useReveal.js";
 
 export const Experience = () => {
