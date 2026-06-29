@@ -22,15 +22,17 @@ export const Hero = () => {
             {PROFILE.location}
           </div>
 
-          <h1 className="brand-logo text-[4.2rem] font-bold leading-[0.86] tracking-tight text-aquaDark sm:text-[5.8rem] lg:text-[7.4rem]">
-            Martina
+          <h1 className="font-display max-w-4xl text-[3.4rem] font-bold leading-[0.95] tracking-tight text-aquaDark sm:text-[4.6rem] lg:text-[5.8rem]">
+            Social Media Manager,
             <br />
-            Arciello
+            Content Creator &
+            <br />
+            Storytelling lover.
           </h1>
 
-          <p className="mt-8 max-w-2xl font-display text-2xl leading-snug text-ink md:text-3xl">
-            Social Media Manager, Content Creator & Storytelling lover.
-          </p>
+<p className="mt-8 max-w-xl text-base leading-8 text-stone md:text-lg">
+  {HERO.subtitle}
+</p>
 
           <p className="mt-6 max-w-xl text-base leading-8 text-stone md:text-lg">
             {HERO.subtitle}
