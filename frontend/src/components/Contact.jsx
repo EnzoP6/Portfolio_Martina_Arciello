@@ -1,4 +1,4 @@
-import { Mail, Instagram, Linkedin, ArrowUpRight } from "lucide-react";
+import { Mail, Instagram, Linkedin, ArrowUpRight, Music2 } from "lucide-react";
 import { PROFILE } from "../data/content";
 import { useReveal } from "../hooks/useReveal";
 
@@ -28,7 +28,7 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="mt-14 grid sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
           <ContactButton
             testid="contact-email"
             href={`mailto:${PROFILE.email}`}
@@ -43,6 +43,14 @@ export const Contact = () => {
             icon={<Instagram size={20} strokeWidth={1.5} />}
             label="Instagram"
             value={PROFILE.instagram}
+          />
+
+          <ContactButton
+            testid="contact-tiktok"
+            href={PROFILE.tiktokUrl}
+            icon={<Music2 size={20} strokeWidth={1.5} />}
+            label="TikTok"
+            value={PROFILE.tiktok}
           />
 
           <ContactButton
