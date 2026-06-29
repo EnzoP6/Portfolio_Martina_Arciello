@@ -9,7 +9,7 @@ export const Portfolio = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div className="max-w-2xl">
-            <span className="text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-clay">
+            <span className="text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-[#0097B2]">
               Portfolio
             </span>
             <h2 className="mt-5 font-serif text-4xl md:text-5xl tracking-tight text-ink">
