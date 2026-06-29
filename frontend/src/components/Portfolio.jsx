@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { PROJECTS } from "../data/content.js";
-import { useReveal } from "../hooks/useReveal.js";
+import { PROJECTS } from "../data/content";
+import { useReveal } from "../hooks/useReveal";
 
 export const Portfolio = () => {
   return (
