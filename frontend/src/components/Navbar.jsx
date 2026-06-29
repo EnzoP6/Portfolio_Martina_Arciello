@@ -18,10 +18,12 @@ export const Navbar = () => {
   const handleNav = (e, href) => {
     e.preventDefault();
     setOpen(false);
+
     if (location.pathname !== "/") {
       navigate("/" + href);
       return;
     }
+
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
@@ -29,30 +31,38 @@ export const Navbar = () => {
   return (
     <header
       data-testid="navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "backdrop-blur-2xl bg-bone/70 border-b border-line/60"
+          ? "border-b border-line/60 bg-bone/70 backdrop-blur-2xl"
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-12">
         <Link
           to="/"
           data-testid="nav-logo"
-          onClick={(e) => handleNav(e, "#top")}
-          className="font-serif text-2xl md:text-3xl tracking-tight text-ink"
+          onClick={(e) => handleNav(e, "#home")}
+          className="flex items-center gap-3 text-[#191919] transition-colors duration-300 hover:text-[#0097B2]"
         >
-          Martina<span className="text-clay">.</span>
+          <img
+            src="/images/logo.png"
+            alt="Logo Martina Arciello"
+            className="h-8 w-8 object-contain"
+          />
+
+          <span className="font-serif text-2xl tracking-tight md:text-3xl">
+            Martina<span className="text-[#0097B2]">.</span>
+          </span>
         </Link>
 
-        <ul className="hidden md:flex items-center gap-9">
+        <ul className="hidden items-center gap-9 md:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
                 data-testid={`nav-link-${link.href.replace("#", "")}`}
                 onClick={(e) => handleNav(e, link.href)}
-                className="text-sm text-stone hover:text-ink transition-colors duration-300"
+                className="text-sm text-stone transition-colors duration-300 hover:text-[#0097B2]"
               >
                 {link.label}
               </a>
@@ -64,14 +74,14 @@ export const Navbar = () => {
           href="#contatti"
           data-testid="nav-cta"
           onClick={(e) => handleNav(e, "#contatti")}
-          className="hidden md:inline-flex items-center rounded-full bg-ink text-bone text-sm px-6 py-3 hover:bg-clay transition-colors duration-300"
+          className="hidden items-center rounded-full bg-[#365E67] px-6 py-3 text-sm text-white transition-colors duration-300 hover:bg-[#0097B2] md:inline-flex"
         >
           Contattami
         </a>
 
         <button
           data-testid="nav-mobile-toggle"
-          className="md:hidden text-ink"
+          className="text-[#191919] transition-colors duration-300 hover:text-[#0097B2] md:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Apri menu"
         >
@@ -82,7 +92,7 @@ export const Navbar = () => {
       {open && (
         <div
           data-testid="nav-mobile-menu"
-          className="md:hidden backdrop-blur-2xl bg-bone/95 border-t border-line/60 px-6 py-6"
+          className="border-t border-line/60 bg-bone/95 px-6 py-6 backdrop-blur-2xl md:hidden"
         >
           <ul className="flex flex-col gap-5">
             {NAV_LINKS.map((link) => (
@@ -90,16 +100,17 @@ export const Navbar = () => {
                 <a
                   href={link.href}
                   onClick={(e) => handleNav(e, link.href)}
-                  className="text-lg text-ink"
+                  className="text-lg text-[#191919] transition-colors duration-300 hover:text-[#0097B2]"
                 >
                   {link.label}
                 </a>
               </li>
             ))}
+
             <li>
               <a
                 href={`mailto:${PROFILE.email}`}
-                className="inline-flex rounded-full bg-clay text-white text-sm px-6 py-3"
+                className="inline-flex rounded-full bg-[#365E67] px-6 py-3 text-sm text-white transition-colors duration-300 hover:bg-[#0097B2]"
               >
                 Contattami
               </a>
