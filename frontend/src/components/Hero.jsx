@@ -65,7 +65,7 @@ export const Hero = () => {
 
           <div className="relative overflow-hidden rounded-[2rem] border border-line bg-white p-3 shadow-2xl">
             <img
-              src="/images/martina.jpg"
+              src="/images/martina.jpeg"
               alt="Martina Arciello"
               className="h-[520px] w-full rounded-[1.5rem] object-cover object-center"
             />
