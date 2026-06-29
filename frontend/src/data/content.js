@@ -45,6 +45,7 @@ export const EXPERIENCES = [
   {
     company: "Visit Italy",
     role: "Social Media Manager",
+    date : "gen 2026 - attuale",
     description:
       "Parte del marketing team di Visit Italy, piattaforma indipendente dedicata alla cultura e al viaggio, con una community di 1,9 milioni di follower su Instagram e oltre 105 mila su TikTok. Le attività includono strategia dei contenuti, coordinamento creator, sviluppo di format UGC, copywriting, ricerca trend e monitoraggio delle performance, con un focus su brand storytelling, audience engagement e crescita dei canali.",
     period: "Travel & Destination Marketing",
@@ -52,6 +53,7 @@ export const EXPERIENCES = [
   {
     company: "Ginecologia Fiorillo & Palese",
     role: "Social Media Manager freelance",
+    date : "mag 2023 - gen 2026",
     description:
       "Gestione social per uno studio medico specializzato in ginecologia e salute femminile, dalla creazione dei contenuti alla pianificazione editoriale, fino al community management e al supporto Meta Ads. Sviluppo di contenuti informativi e accessibili, pensati per comunicare temi legati alla salute femminile con sensibilità e coerenza professionale.",
     period: "Healthcare Communication",
@@ -59,6 +61,7 @@ export const EXPERIENCES = [
   {
     company: "Teatro Nazionale di Napoli",
     role: "Comunicazione e supporto social",
+    date : "gen 2025 - giugno 2025 (stage curricolare)",
     description:
       "Supporto alla comunicazione istituzionale e alle iniziative promozionali, con attività di gestione database contatti, affiancamento nello sviluppo di campagne mirate e collaborazione con il team grafico per la realizzazione di contenuti e materiali di comunicazione.",
     period: "Culture & Events",
@@ -66,6 +69,7 @@ export const EXPERIENCES = [
   {
     company: "social.archie",
     role: "Creator personale",
+    date : "mar 2026 - attuale",
     description:
       "Progetto personale dedicato alla vita reale, crescita, creatività e racconto dell'ingresso nell'età adulta senza perdere se stessi. Tono autentico, riflessivo, ironico e contemporaneo.",
     period: "Personal Project",
