@@ -1,5 +1,5 @@
-import { SERVICES } from "../data/content.js";
-import { useReveal } from "../hooks/useReveal.js";
+import { SERVICES } from "../data/content";
+import { useReveal } from "../hooks/useReveal";
 
 export const Services = () => {
   return (
