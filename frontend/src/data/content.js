@@ -23,8 +23,12 @@ export const HERO = {
 };
 
 export const ABOUT = {
-  paragraph:
-    "Ho lavorato in contesti diversi, dal teatro agli studi medici fino al marketing territoriale, imparando a dare a ogni realtà una voce riconoscibile. Oggi mi occupo di contenuti social, campagne digitali, storytelling e gestione community, con particolare attenzione a Instagram, TikTok e ai linguaggi delle nuove generazioni.",
+  paragraphs: [
+    "Sono Martina Arciello, Digital Marketing Specialist con una Laurea Magistrale in Comunicazione Pubblica e d’Impresa.",
+    "Creo contenuti e strategie social nel punto esatto in cui si incontrano brand, persone e cultura digitale. Il mio lavoro parte dalle idee, passa attraverso trend, linguaggi e community, e diventa contenuto: qualcosa che non si limita a stare online, ma prova a farsi notare, ricordare e condividere.",
+    "Il mio percorso unisce formazione accademica, esperienza sul campo e una naturale attenzione al modo in cui le persone vivono, interpretano e attraversano le piattaforme digitali ogni giorno.",
+    "Per me comunicare online significa creare connessioni: tra un’idea e il suo pubblico, tra un brand e la sua community, tra una storia e il modo migliore per raccontarla."
+  ],
   skills: [
     { title: "Social Media Strategy", desc: "Piani che partono dagli obiettivi reali, non dalle mode." },
     { title: "Content Creation", desc: "Foto, video e format pensati per fermare lo scroll." },
