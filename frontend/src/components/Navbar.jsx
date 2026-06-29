@@ -42,7 +42,7 @@ export const Navbar = () => {
           onClick={(e) => handleNav(e, "#top")}
           className="font-serif text-2xl md:text-3xl tracking-tight text-ink"
         >
-          Martina Arciello<span className="text-clay">.</span>
+          Martina<span className="text-clay">.</span>
         </Link>
 
         <ul className="hidden md:flex items-center gap-9">
