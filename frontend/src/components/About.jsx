@@ -1,4 +1,4 @@
-import { ABOUT } from "../data/content";
+import { ABOUT } from "../data/content.js";
 import { useReveal } from "../hooks/useReveal.js";
 
 const spans = [
