@@ -15,7 +15,7 @@ const spans = [
 export const About = () => {
   const ref = useReveal();
   return (
-    <section id="about" data-testid="about-section" className="py-20 md:py-28 bg-bone">
+    <section id="about" data-testid="about-section" className="py-20 md:py-28 bg-bg-[#F9F8F6]">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div ref={ref} className="reveal grid lg:grid-cols-12 gap-10 items-end">
           <div className="lg:col-span-7">
