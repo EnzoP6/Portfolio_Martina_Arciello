@@ -15,7 +15,7 @@ export const PROFILE = {
 export const HERO = {
   title: "Social Media Manager, Content Creator & Storytelling lover",
   subtitle:
-    "Aiuto brand, progetti e territori a trovare la propria voce online, trasformando idee, contenuti e community in esperienze digitali memorabili.",
+    "Cerco il dettaglio che gli altri non notano e lo trasformo nel motivo per cui qualcuno si ferma a guardare. Trasformo idee, trend e intuizioni in storie capaci di fermare lo scroll.",
   intro:
     "Mi chiamo Martina Arciello, sono una Social Media Manager con una formazione in Comunicazione Pubblica e d'Impresa. Lavoro tra strategia, creatività e contenuti, con un approccio pratico, contemporaneo e sempre orientato alle persone.",
   portrait:
