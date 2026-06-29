@@ -8,6 +8,8 @@ export const PROFILE = {
   instagram: "@social.archie",
   instagramUrl: "https://www.instagram.com/social.archie",
   linkedin: "https://www.linkedin.com/in/martina-arciello-54245723a/",
+  tiktok: "@social.archie",
+  tiktokUrl: "https://www.tiktok.com/@social.archie",
 };
 
 export const HERO = {
