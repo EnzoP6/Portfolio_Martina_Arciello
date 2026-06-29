@@ -5,7 +5,7 @@ import { useReveal } from "../hooks/useReveal";
 
 export const Portfolio = () => {
   return (
-    <section id="progetti" data-testid="portfolio-section" className="py-20 md:py-28 bg-bone">
+    <section id="progetti" data-testid="portfolio-section" className="py-20 md:py-28 bg-bg-[#F9F8F6]">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div className="max-w-2xl">
