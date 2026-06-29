@@ -1,6 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "ITC Benguiat Condensed";
+  src: url("/fonts/itc-benguiat-condensed.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Ramillas";
+  src: url("/fonts/tt-ramillas.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Interphases";
+  src: url("/fonts/tt-interphases.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --brand-aqua-dark: #365E67;
+  --brand-cyan: #0097B2;
+  --brand-ink: #191919;
+  --brand-white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #191919;
+  font-family: "TT Interphases", Inter, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.logo-font {
+  font-family: "TT Ramillas", "Cormorant Garamond", Georgia, serif;
+}
+
+.brand-logo {
+  font-family: "ITC Benguiat Condensed", "Cormorant Garamond", Georgia, serif;
+  letter-spacing: -0.04em;
+}
 
 html {
     scroll-behavior: smooth;
