@@ -1,5 +1,5 @@
-import { ABOUT } from "../data/content.js";
-import { useReveal } from "../hooks/useReveal.js";
+import { ABOUT } from "../data/content";
+import { useReveal } from "../hooks/useReveal";
 
 const spans = [
   "md:col-span-8",
