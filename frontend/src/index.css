@@ -24,8 +24,8 @@ html {
 
 body {
   margin: 0;
-  background: var(--brand-white);
-  color: var(--brand-ink);
+  background: #F9F8F6;
+  color: #191919;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
