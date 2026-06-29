@@ -58,9 +58,6 @@ const SkillCard = ({ skill, span }) => {
     >
       <div className="flex items-start justify-between gap-4">
         <h4 className="font-serif text-2xl md:text-3xl text-ink">{skill.title}</h4>
-        <span className="font-serif text-xl text-clay/60 group-hover:text-clay transition-colors duration-300">
-          ↗
-        </span>
       </div>
       <p className="mt-3 text-sm md:text-base font-light text-stone leading-relaxed">
         {skill.desc}
