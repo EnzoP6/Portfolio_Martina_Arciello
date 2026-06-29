@@ -30,14 +30,14 @@ export const ABOUT = {
     "Per me comunicare online significa creare connessioni: tra un’idea e il suo pubblico, tra un brand e la sua community, tra una storia e il modo migliore per raccontarla."
   ],
   skills: [
-    { title: "Social Media Strategy", desc: "Piani che partono dagli obiettivi reali, non dalle mode." },
-    { title: "Content Creation", desc: "Foto, video e format pensati per fermare lo scroll." },
-    { title: "Copywriting & SEO Captions", desc: "Caption che raccontano e si fanno trovare." },
-    { title: "Community Management", desc: "Relazioni vere, risposte umane, community che resta." },
-    { title: "Creator Relations", desc: "Scouting, brief e coordinamento talent e creator." },
-    { title: "Brand Storytelling", desc: "Un tono di voce riconoscibile, coerente e autentico." },
-    { title: "Campaign Coordination", desc: "Dalle idee all'attivazione, gestendo ogni passaggio." },
-    { title: "UGC Content", desc: "Contenuti spontanei e credibili che convertono." },
+    { title: "Social Media Strategy", desc: "Costruisco strategie social pensate per dare direzione, coerenza e personalità alla presenza online di brand, progetti e territori." },
+    { title: "Content Creation", desc: "Creo contenuti visivi e testuali capaci di raccontare un’identità, catturare attenzione e trasformare un’idea in qualcosa che le persone vogliono guardare." },
+    { title: "Copywriting & SEO Captions", desc: "Scrivo testi e caption ottimizzate per i social, unendo tono di voce, storytelling e parole chiave per rendere ogni contenuto più chiaro, trovabile e coinvolgente." },
+    { title: "Community Management", desc: "Gestisco le conversazioni online con attenzione al tono, alla relazione e al valore di ogni interazione, trasformando commenti e messaggi in occasioni di connessione." },
+    { title: "Creator Relations", desc: "Mi occupo del rapporto con creator e talent, dalla ricerca dei profili giusti alla gestione della comunicazione, per costruire collaborazioni autentiche e coerenti con il brand." },
+    { title: "Brand Storytelling", desc: "Aiuto brand, progetti e territori a raccontarsi con una voce riconoscibile, trasformando valori, idee e identità in storie capaci di restare impresse." },
+    { title: "Campaign Coordination", desc: "Coordino campagne social seguendo ogni fase del processo, dal concept alla pubblicazione, mantenendo insieme creatività, obiettivi e performance." },
+    { title: "UGC Content", desc: "Creo e valorizzo contenuti user generated pensati per sembrare naturali, credibili e vicini alle persone, mantenendo però una direzione strategica chiara." },
   ],
 };
 
@@ -46,21 +46,21 @@ export const EXPERIENCES = [
     company: "Visit Italy",
     role: "Social Media Manager",
     description:
-      "Gestione e sviluppo di contenuti social per una realtà internazionale nel settore travel e destination marketing. Attività su brief creativi, caption SEO in inglese, campagne partner, creator scouting, coordinamento talent, community management e attivazioni territoriali.",
+      "Parte del marketing team di Visit Italy, piattaforma indipendente dedicata alla cultura e al viaggio, con una community di 1,9 milioni di follower su Instagram e oltre 105 mila su TikTok. Le attività includono strategia dei contenuti, coordinamento creator, sviluppo di format UGC, copywriting, ricerca trend e monitoraggio delle performance, con un focus su brand storytelling, audience engagement e crescita dei canali.",
     period: "Travel & Destination Marketing",
   },
   {
     company: "Ginecologia Fiorillo & Palese",
     role: "Social Media Manager freelance",
     description:
-      "Gestione della comunicazione social per uno studio ginecologico, con attenzione a tono di voce, contenuti educativi, fiducia, delicatezza del linguaggio e relazione con la community.",
+      "Gestione social per uno studio medico specializzato in ginecologia e salute femminile, dalla creazione dei contenuti alla pianificazione editoriale, fino al community management e al supporto Meta Ads. Sviluppo di contenuti informativi e accessibili, pensati per comunicare temi legati alla salute femminile con sensibilità e coerenza professionale.",
     period: "Healthcare Communication",
   },
   {
     company: "Teatro Nazionale di Napoli",
     role: "Comunicazione e supporto social",
     description:
-      "Supporto alle attività di comunicazione, creazione contenuti, gestione materiali, database e attività promozionali legate al mondo teatrale e culturale.",
+      "Supporto alla comunicazione istituzionale e alle iniziative promozionali, con attività di gestione database contatti, affiancamento nello sviluppo di campagne mirate e collaborazione con il team grafico per la realizzazione di contenuti e materiali di comunicazione.",
     period: "Culture & Events",
   },
   {
