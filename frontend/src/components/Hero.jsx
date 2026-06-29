@@ -9,72 +9,74 @@ export const Hero = () => {
 
   return (
     <section
-      id="top"
-      data-testid="hero-section"
-      className="relative pt-36 md:pt-44 pb-20 md:pb-28 overflow-hidden"
+      id="home"
+      className="relative overflow-hidden bg-white px-6 pb-20 pt-28 text-ink md:px-10 lg:px-16"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        <div className="lg:col-span-7">
-          <span className="inline-flex items-center gap-2 text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-clay">
-            <Sparkles size={15} strokeWidth={1.5} /> {PROFILE.location}
-          </span>
+      <div className="absolute right-[-120px] top-[-120px] h-80 w-80 rounded-full bg-cyanBrand/20 blur-3xl" />
+      <div className="absolute bottom-[-140px] left-[-120px] h-80 w-80 rounded-full bg-aquaDark/15 blur-3xl" />
 
-          <h1 className="mt-6 font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-ink">
-            Social Media Manager, Content Creator &{" "}
-            <span className="italic text-clay">Storytelling lover</span>
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+        <div>
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-line bg-softAqua px-4 py-2 text-sm font-medium text-aquaDark">
+            <Sparkles size={16} />
+            {PROFILE.location}
+          </div>
+
+          <h1 className="brand-logo text-[4.2rem] font-bold leading-[0.86] tracking-tight text-aquaDark sm:text-[5.8rem] lg:text-[7.4rem]">
+            Martina
+            <br />
+            Arciello
           </h1>
 
-          <p className="mt-8 text-base md:text-lg leading-relaxed font-light text-stone max-w-xl">
+          <p className="mt-8 max-w-2xl font-display text-2xl leading-snug text-ink md:text-3xl">
+            Social Media Manager, Content Creator & Storytelling lover.
+          </p>
+
+          <p className="mt-6 max-w-xl text-base leading-8 text-stone md:text-lg">
             {HERO.subtitle}
           </p>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <button
-              data-testid="hero-projects-btn"
+              type="button"
               onClick={() => scrollTo("#progetti")}
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-ink text-bone px-8 py-4 text-sm hover:bg-clay transition-colors duration-300"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-aquaDark px-8 py-4 text-sm font-semibold text-white transition-colors duration-300 hover:bg-cyanBrand"
             >
               Guarda i miei progetti
               <ArrowDownRight
                 size={18}
-                strokeWidth={1.5}
-                className="group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform duration-300"
+                className="transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1"
               />
             </button>
+
             <button
-              data-testid="hero-contact-btn"
+              type="button"
               onClick={() => scrollTo("#contatti")}
-              className="inline-flex items-center justify-center rounded-full border border-ink text-ink px-8 py-4 text-sm hover:bg-ink hover:text-bone transition-colors duration-300"
+              className="inline-flex items-center justify-center rounded-full border border-aquaDark px-8 py-4 text-sm font-semibold text-aquaDark transition-colors duration-300 hover:bg-aquaDark hover:text-white"
             >
               Contattami
             </button>
           </div>
         </div>
 
-        <div className="lg:col-span-5">
-          <div className="relative">
-            <div className="absolute -top-6 -left-6 w-28 h-28 rounded-full bg-clay/15 blur-2xl" />
-            <div className="relative rounded-[2rem] overflow-hidden border border-line shadow-xl shadow-black/5">
-              <img
-                src={HERO.portrait}
-                alt="Martina Arciello, Social Media Manager e Content Creator"
-                className="w-full h-[420px] md:h-[520px] object-cover"
-                loading="eager"
-              />
-            </div>
-            <div className="absolute -bottom-5 -right-3 md:right-6 bg-surface border border-line rounded-2xl px-5 py-4 shadow-lg shadow-black/5">
-              <p className="font-serif text-2xl text-ink leading-none">Napoli</p>
-              <p className="text-xs text-stone mt-1">Based & loving it</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div className="relative mx-auto w-full max-w-md">
+          <div className="absolute -right-6 -top-6 h-full w-full rounded-[2rem] bg-cyanBrand" />
+          <div className="absolute -bottom-6 -left-6 h-full w-full rounded-[2rem] bg-aquaDark" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 mt-20 md:mt-28">
-        <div className="border-t border-line pt-10">
-          <p className="font-serif text-2xl md:text-3xl lg:text-4xl leading-snug text-ink max-w-4xl">
-            {HERO.intro}
-          </p>
+          <div className="relative overflow-hidden rounded-[2rem] border border-line bg-white p-3 shadow-2xl">
+            <img
+              src="/images/martina.jpg"
+              alt="Martina Arciello"
+              className="h-[520px] w-full rounded-[1.5rem] object-cover object-center"
+            />
+          </div>
+
+          <div className="absolute -bottom-8 right-6 rounded-3xl bg-white px-6 py-5 shadow-xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyanBrand">
+              Based in
+            </p>
+            <p className="font-display text-3xl text-aquaDark">Napoli</p>
+          </div>
         </div>
       </div>
     </section>
