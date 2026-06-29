@@ -1,5 +1,5 @@
 import { Mail, Instagram, Linkedin, ArrowUpRight } from "lucide-react";
-import { PROFILE } from "../data/content";
+import { PROFILE } from "../data/content.js";
 import { useReveal } from "../hooks/useReveal.js";
 
 export const Contact = () => {
