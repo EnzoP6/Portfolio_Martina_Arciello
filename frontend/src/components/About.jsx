@@ -28,17 +28,16 @@ export const About = () => {
               About
             </span>
 
-            <p className="mt-6 font-serif text-2xl md:text-3xl lg:text-4xl leading-snug text-ink">
-              {ABOUT.paragraph}
-            </p>
-          </div>
-
-          <div className="lg:col-span-5 lg:pl-8">
-            <p className="text-base md:text-lg font-light text-stone leading-relaxed">
-              Formazione in Comunicazione Pubblica e d&apos;Impresa. Approccio pratico,
-              contemporaneo e sempre orientato alle persone, tra Instagram, TikTok e i
-              linguaggi delle nuove generazioni.
-            </p>
+            <div className="mt-6 space-y-5">
+              {ABOUT.paragraphs.map((paragraph, index) => (
+                <p
+                  key={index}
+                  className="font-serif text-2xl md:text-3xl leading-snug text-ink"
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
 
