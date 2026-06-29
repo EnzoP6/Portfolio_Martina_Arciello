@@ -10,13 +10,15 @@ export const Experience = () => {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="mb-14 max-w-2xl">
-          <span className="text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-[#0097B2]">
-            Percorso
-          </span>
+          <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+            <span className="text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-[#0097B2]">
+              Percorso
+            </span>
 
-          <h2 className="mt-5 font-serif text-4xl md:text-5xl tracking-tight text-ink">
-            Esperienza
-          </h2>
+            <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-ink">
+              Esperienza
+            </h2>
+          </div>
         </div>
 
         <div className="relative">
@@ -43,7 +45,11 @@ const ExperienceRow = ({ exp, index }) => {
       className="reveal grid md:grid-cols-4 gap-4 md:gap-8 py-8 md:py-10 border-b border-line group"
     >
       <div className="md:col-span-1">
-        <span className="text-xs uppercase tracking-[0.15em] text-[#0097B2]">
+        <span className="block text-xs uppercase tracking-[0.15em] text-[#0097B2]">
+          {exp.date}
+        </span>
+
+        <span className="mt-3 block text-xs uppercase tracking-[0.15em] text-[#0097B2]/70">
           {exp.period}
         </span>
       </div>
