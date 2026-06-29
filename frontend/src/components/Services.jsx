@@ -32,7 +32,7 @@ const ServiceCard = ({ service, index }) => {
       data-testid={`service-card-${index}`}
       className="reveal group rounded-3xl border border-white/10 bg-white/[0.03] p-7 hover:bg-white/[0.06] hover:-translate-y-1 transition-all duration-500"
     >
-      <span className="font-serif text-3xl text-clay/70 group-hover:text-clay transition-colors duration-300">
+      <span className="font-serif text-3xl text-[#0097B2]/70 group-hover:text-[#0097B2] transition-colors duration-300">
         {String(index + 1).padStart(2, "0")}
       </span>
       <h3 className="mt-4 font-serif text-2xl text-bone">{service.title}</h3>
