@@ -1,5 +1,5 @@
 import { ArrowDownRight, Sparkles } from "lucide-react";
-import { HERO, PROFILE } from "../data/content";
+import { HERO, PROFILE } from "../data/content.js";
 
 export const Hero = () => {
   const scrollTo = (sel) => {
