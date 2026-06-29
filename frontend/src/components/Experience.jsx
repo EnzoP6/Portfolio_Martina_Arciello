@@ -3,28 +3,21 @@ import { useReveal } from "../hooks/useReveal";
 
 export const Experience = () => {
   return (
-    <section
-      id="esperienza"
-      data-testid="experience-section"
-      className="py-20 md:py-28 bg-sand"
-    >
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="mb-14 max-w-2xl">
-          <span className="text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-clay">
+    <section id="esperienza" className="bg-white px-6 py-24 text-ink md:px-10 lg:px-16">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-14">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#0097B2]">
             Percorso
-          </span>
-          <h2 className="mt-5 font-serif text-4xl md:text-5xl tracking-tight text-ink">
+          </p>
+          <h2 className="font-display text-5xl font-normal tracking-tight text-ink md:text-6xl">
             Esperienza
           </h2>
         </div>
 
-        <div className="relative">
-          <div className="absolute left-0 md:left-1/4 top-0 bottom-0 w-px bg-line hidden md:block" />
-          <div className="space-y-4 md:space-y-0">
-            {EXPERIENCES.map((exp, i) => (
-              <ExperienceRow key={exp.company} exp={exp} index={i} />
-            ))}
-          </div>
+        <div className="space-y-6">
+          {EXPERIENCES.map((exp, i) => (
+            <ExperienceRow key={exp.company} exp={exp} index={i} />
+          ))}
         </div>
       </div>
     </section>
@@ -33,26 +26,37 @@ export const Experience = () => {
 
 const ExperienceRow = ({ exp, index }) => {
   const ref = useReveal();
+
   return (
-    <div
+    <article
       ref={ref}
-      data-testid={`experience-item-${index}`}
-      className="reveal grid md:grid-cols-4 gap-4 md:gap-8 py-8 md:py-10 border-b border-line group"
+      className="reveal group grid gap-6 rounded-[2rem] border border-line bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#0097B2]/50 hover:shadow-xl md:grid-cols-[220px_1fr] md:p-8"
+      style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <div className="md:col-span-1">
-        <span className="text-xs uppercase tracking-[0.15em] text-clay">{exp.period}</span>
-      </div>
-      <div className="md:col-span-3 md:pl-8">
-        <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-          <h3 className="font-serif text-2xl md:text-3xl text-ink group-hover:text-clay transition-colors duration-300">
-            {exp.company}
-          </h3>
-          <span className="text-sm font-medium text-stone">{exp.role}</span>
+      <div className="flex items-start gap-4">
+        <div className="mt-2 h-3 w-3 rounded-full bg-[#0097B2]" />
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0097B2]">
+            {exp.period}
+          </p>
+          <div className="mt-4 hidden h-full min-h-16 w-px bg-[#0097B2]/40 md:block" />
         </div>
-        <p className="mt-4 text-base font-light text-stone leading-relaxed max-w-3xl">
+      </div>
+
+      <div>
+        <h3 className="font-display text-3xl font-normal text-ink transition-colors duration-300 group-hover:text-[#0097B2] md:text-4xl">
+          {exp.company}
+        </h3>
+
+        <p className="mt-2 text-base font-semibold text-[#365E67]">
+          {exp.role}
+        </p>
+
+        <p className="mt-5 max-w-3xl text-base leading-8 text-stone">
           {exp.description}
         </p>
       </div>
-    </div>
+    </article>
   );
 };
