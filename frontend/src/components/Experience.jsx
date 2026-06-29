@@ -1,5 +1,5 @@
-import { EXPERIENCES } from "../data/content.js";
-import { useReveal } from "../hooks/useReveal.js";
+import { EXPERIENCES } from "../data/content";
+import { useReveal } from "../hooks/useReveal";
 
 export const Experience = () => {
   return (
