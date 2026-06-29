@@ -10,15 +10,12 @@ export const Experience = () => {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="mb-14 max-w-2xl">
-          <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
-            <span className="text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-[#0097B2]">
-              Percorso
-            </span>
-        
-            <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-ink">
-              Esperienza
-            </h2>
-          </div>
+          <span className="text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-clay">
+            Percorso
+          </span>
+          <h2 className="mt-5 font-serif text-4xl md:text-5xl tracking-tight text-ink">
+            Esperienza
+          </h2>
         </div>
 
         <div className="relative">
